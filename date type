@@ -1,0 +1,35 @@
+###########
+# 为什么区分数据类型
+# 1、区分存储空间
+# 2、根据不同数据类型的特性，做不同的数据处理
+print(6 + 6)
+print('6' + '6')
+
+#############
+# 常用数据类型
+# Number
+# Bool
+# String
+# List
+# Set
+# Tuple
+# Dictory
+# Nonetype
+type(print(6))
+
+##############
+# 数据类型转换
+num = '6'
+print(4 + int(num))
+print(str(4) + num)
+
+score = input('前输入一个数字')
+print(int(score) + 10)
+
+# 强类型
+
+# 弱类型
+
+# 静态类型
+
+# 动态类型
