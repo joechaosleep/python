@@ -58,3 +58,48 @@ print(num5)
 
 ##############################
 # 比较运算符
+# > < != <> >= <= == is 链状比较运算符
+# ==判断是否相等
+# <> 等同于 !=，适应于2.0版本，不适用于3.0
+# id 查看唯一标识
+# is 比对唯一标识
+a = 10
+b = 10
+print(a == b)
+print(id(a))
+print(id(b))
+print(a is b)
+c = [1]
+d = [1]
+e = [2]
+print(c == d)
+print(c == e)
+print(c is d)
+print(c is e)
+# 链式比较运算符就是数学中的连续比较，类似于区间
+numa = 10
+numb = 20
+print(5 < numa < 15)
+print(5 < numb < 15)
+
+# 逻辑运算符
+# not 非，取反
+# and，与，并且，一假全假
+# or，或，一真全真
+# 注意
+# 非零即真，非空即真
+print(bool(1))
+print(bool(0))
+print(1 and True)
+print(1 and False)
+print(bool('0'))
+print(bool(''))
+# 逻辑表达式的结果不一定是布尔类型
+print(0 and True)
+print(1 or False)
+print(True and 0)
+print(True and 1)
+# 可称为短路运算符
+print(1 and 3)
+print(1 or 3)
+print(0 or 3)
