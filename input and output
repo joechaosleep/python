@@ -1,0 +1,47 @@
+# # 数据来源
+# 1、程序内部写死
+# 2、从文件读取
+# 3、网络服务器进行获取
+# 4、接收用户的输入
+# # 处理数据的程序 其处理结果
+# 1、写回到文件里面保存
+# 2、发送回服务器
+# 3、打印到控制台，或通过一些界面展示给用户看
+
+# ###输入
+# input与eval()
+# input相当于python2中的raw_input()
+
+# 输出
+# print(values,sep,end,file,flush)
+# values     需要输出的值，多个值用逗号分隔
+# sep    分割符，多个值被输出出来之后，值与值之间，会添加指定的分隔符；
+# end    输出完毕后，以指定的字符结束，默认是换行符\n
+# file   表示输出的目标，默认是控制台，还可以是一个可写入的文件句柄
+# flush  表示立即输出的意思，值未bool类型
+
+from time import sleep
+
+print(123)
+
+number = 55
+print(number)
+
+num1 = 10
+num2 = 15
+print(num1, num2)
+
+name = 'abc'
+age = 18
+print('my name is %s,my age is %d' % (name, age))
+# print('my name is {0},my age is {1}', format(name, name))
+
+f = open('text.txt', 'w')
+print('aaaaa', file=f)
+
+print('abc', end='')
+
+print('1', '2', '3', sep='///')
+
+print('请输入账号', end='', flush=True)
+sleep(5)
